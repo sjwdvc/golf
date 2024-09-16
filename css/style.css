@@ -1,9 +1,319 @@
-.bigger-text{
-	font-size: 30px;
+body,
+html {
+ /* font-size: calc(16px + 0.5vw); */
 }
-.super-big-text{
-	font-size: 50px;
+
+.row{
+  padding-left: 0px;
+  padding-right: 0px;
 }
-.align-items-center{
-	align-items:center;
+
+.z-1{
+  z-index: 1;
+}
+
+
+.z-2{
+  z-index: 2;
+}
+
+.fullScreen{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 9999;
+      margin:  0px;
+}
+
+
+
+
+
+
+.splashBg {
+      background: url("../images/haenen-10.jpg") top no-repeat fixed;
+
+  overflow: hidden;
+  margin: -15;
+/*  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-size: cover;
+  top: 0px;
+  left: 0px;
+}
+
+
+.loading {
+  margin-top: 150px;
+  color: #fff;
+}
+
+.loader {
+  position: relative;
+  overflow: hidden;
+   height: 10%; 
+   width: 10%; 
+   margin: 0px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+.yellow {
+  background-color: #ffc107 !important;
+}
+
+.container,.splashCont {
+  position: relative;
+}
+
+.navbar-toggle,
+.fixed-botttom {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.ulPlace {
+  position: absolute;
+  border: 5px solid white;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 5px;
+  width: 75%;
+  right: 20px;
+  margin-top: 10px;
+}
+
+.teamName {
+  letter-spacing: 0.25em;
+}
+
+
+
+.noScroll {
+  overflow: hidden;
+}
+
+.onTop {
+position: absolute;
+z-index: 5;
+text-shadow: 1px 1px #eee;
+}
+
+.logo {
+  position: absolute;
+  bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconColor{
+color: black;
+}
+
+.white{
+  color:white;
+}
+
+
+
+
+.align-items-center {
+  align-items: center;
+}
+
+.bogey,
+.birdie,
+.eagle,
+.double {
+  background-color: transparent;
+  border: 2px solid #000;
+  height: 2rem;
+  width: 2rem;
+}
+
+.eagle,
+.double {
+  border: 4px double;
+}
+
+.birdie,
+.eagle {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.vanlange {
+  background-image: url("images/logo_VanLangeMode_zwart.png");
+  background-repeat: none;
+}
+
+.scroll-x{
+  overflow-x: hidden;
+}
+
+.check {
+   font-size: 12vw; 
+  margin-top: -15px
+  text-shadow: 1px 1px #fff;
+}
+
+sup{
+  font-size: 0.75rem;
+  transform: rotate(45deg);
+}
+
+.rot90{
+    /* transform: rotate(90deg); */
+    /* transform: rotate(45deg); */
+    text-shadow: 4px;
+}
+
+.active{
+  border: 2px yellow solid !important;
+}
+
+.big-text {
+  /* font-size: 20px; */
+  /*  text-shadow: 1px 1px #ffffff;
+*/
+}
+
+.shadow {
+  text-shadow: 1px 1px #ffffff;
+}
+
+.checkContainer {
+  /*   border-style: groove; */
+  border-style: outset;
+  border-style: groove;
+  box-shadow: 5px 5px darkslategrey;
+  border-color: silver;
+  border-width: 9px;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  color: darkslategrey;
+}
+
+.loccTitle {
+  z-index: 1;
+  text-align: center;
+  height: 100px;
+  background-color: rgb(42, 185, 208);
+  border-bottom: 2px solid;
+  padding-top: 20px;
+}
+
+
+.loccKlassement,
+.loccKlassement .results {
+  margin-top: 100px;
+}
+
+.loccKlassement .focus {
+  margin-top: -100px;
+}
+
+
+#loImg {
+  height: 100px;
+}
+
+.rowHight {
+  vertical-align: bottom;
+  height: 55px;
+  padding: 20px;
+}
+
+.memberName {
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 50%;
+  color: white;
+  font-size: 9px;
+  text-shadow: 1px 1px #000;
+}
+
+hr {
+  background-color: white;
+}
+
+#saldo {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  font-size: 25px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.table td {
+  vertical-align: middle;
+  min-width: 40px;
+}
+
+.balk{
+  min-height: 5px;
+  z-index: 2;
+  /* object-position: bottom; */
+  /* position: absolute; */
+  top: 2px;
+}
+
+.red {
+  border: red 1px double;
+  background-color: red;
+}
+
+.cel {
+  position: relative;
+  min-width:100px;
+  margin:10px;
+  border-top-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+.p-25 {
+  padding: 25px;
+}
+
+.vw-1 {
+  font-size: calc50px;
+}
+
+.vw-2 {
+  font-size: 8vw;
+}
+
+.vw-5{
+  font-size: 15vw;
+}
+
+.admin {
+  color: #0c505a;
+  font-size: 4vw;
+  margin-bottom: 25px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .h1  {
+    font-size: 1.5rem;
+  }
 }
